@@ -40,3 +40,5 @@ The extension is built using:
 - Vanilla JavaScript
 - Chrome Extension Manifest V3
 - WebLLM for client-side LLM processing
+
+Icon by [SmashIcons](https://www.flaticon.com/authors/smashicons)
