@@ -1,0 +1,38 @@
+{
+  "name": "web-summarizer",
+  "version": "1.0.0",
+  "description": "A Chrome extension for webpage summarization and Q&A using LLMs",
+  "main": "background.js",
+  "scripts": {
+    "prebuild": "mkdir -p dist/vendor",
+    "copy-deps": "cp -r node_modules/@mlc-ai/web-llm/lib/index.js dist/vendor/web-llm.js && cp -r node_modules/bootstrap/dist/js/bootstrap.bundle.min.js dist/vendor/ && cp -r node_modules/bootstrap/dist/css/bootstrap.min.css dist/vendor/",
+    "build": "npm run prebuild && npm run copy-deps && cp manifest.json popup.html styles.css content.js popup.js background.js web-llm-init.js dist/",
+    "package": "cd dist && zip -r ../web-summarizer.zip *",
+    "dev": "npm run build && npm run package",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "chrome-extension",
+    "summarization",
+    "llm",
+    "webllm",
+    "huggingface"
+  ],
+  "author": "",
+  "license": "MIT",
+  "dependencies": {
+    "@mlc-ai/web-llm": "^0.2.77",
+    "axios": "^1.7.9",
+    "bootstrap": "^5.3.0",
+    "glob": "^10.0.0",
+    "lru-cache": "^11.0.2",
+    "rimraf": "^5.0.0",
+    "uuid": "^9.0.0"
+  },
+  "devDependencies": {
+    "@types/chrome": "^0.0.254",
+    "typescript": "^5.3.3",
+    "web-ext": "^8.3.0",
+    "eslint": "^9.0.0"
+  }
+}
