@@ -1,7 +1,7 @@
 # WebSummarizer Chrome Extension
 
 WebSummarizer is a Chrome extension that uses Large Language Models (LLMs) to provide webpage summarization and Q&A capabilities directly in your browser.
-![WebSummarizer Illustration](screenshot.png)
+![WebSummarizer Screenshot](screenshot.png)
 
 ## Features
 
