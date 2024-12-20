@@ -13,6 +13,14 @@ WebSummarizer is a Chrome extension that uses Large Language Models (LLMs) to pr
 ## Adding the extension to chrome
 
 1. Clone this repository or download the source code
+2. Install the necessary dependencies:
+    ```bash
+    npm install 
+    ```
+3. Build the project:
+    ```bash
+    npm run build 
+    ```
 2. Open Chrome and navigate to `chrome://extensions/`
 3. Enable "Developer mode" in the top right corner
 4. Click "Load unpacked" and select the directory containing the extension files
