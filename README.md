@@ -10,6 +10,12 @@ WebSummarizer is a Chrome extension that uses Large Language Models (LLMs) to pr
 - Integration with Hugging Face models through WebLLM
 - Privacy Preserved - All the processing happens in your browser without ever leaving your machine
 
+
+## Browser Compatibility Check
+
+The latest Google Chrome provides WebGPU runtime and [WebGPU](https://webgpureport.org/) Report as a useful tool to verify WebGPU capabilities of your browser.
+
+
 ## Adding the extension to chrome
 
 1. Clone this repository or download the source code
@@ -40,6 +46,10 @@ WebSummarizer is a Chrome extension that uses Large Language Models (LLMs) to pr
 ### Q&A Mode
 - Type your question in the input field
 - Click "Ask Question" to get an answer based on the webpage content
+
+## Supported Models
+
+Refer to the [list of models](https://mlc.ai/models) that are available in WebLLM. Add the desired models to `popup.html` and re-build the extension.
 
 ## Development
 
